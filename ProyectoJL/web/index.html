@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JQuery/jquery-3.1.0.min.js" type="text/javascript"></script>
+        <script>
+
+
+
+          /*  var model = {id: 1
+                , primerNombre: "Ivan"
+                , segundoNombre: "Ernesto"
+                , primerApellido: "Martinez"
+                , segundoApellido: "Aguas"
+                , password: "84892489"
+                , fechaNacimiento: new Date(2016, 7, 24)
+                , sexo: "M"
+                , codigoPais: '57'
+                , celular: '8988383'
+                , correo: 'Ivan.Ingeniero@hotmail.com'
+            }
+
+            $.ajax(
+                    {
+                        method: "POST",
+                        url: "http://localhost:8084/ProyectoJL2/app/Clientes/addClientes",
+                        data: JSON.stringify(model),
+                        contentType: "application/json"
+                    }).done(function (resultObj)
+            {
+                console.log(resultObj);
+            });
+*/
+
+            
+          $.ajax(
+                    {
+                        method: "GET",
+                        url: "http://localhost:8084/ProyectoJL2/app/Clientes/getListaClientes"
+                    }).done(function (resultObj)
+            {
+                model = resultObj;
+                console.log(resultObj);
+            });
+
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
